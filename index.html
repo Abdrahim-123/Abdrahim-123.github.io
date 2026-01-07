@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Rahim Memon | Data Scientist</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --accent: #38bdf8;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Header / Hero Section */
+        header {
+            text-align: center;
+            padding: 4rem 1rem;
+            background: linear-gradient(180deg, rgba(15,23,42,0) 0%, rgba(56,189,248,0.1) 100%);
+        }
+
+        h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        .subtitle { color: var(--accent); font-weight: bold; font-size: 1.2rem; }
+        
+        /* Typing Animation */
+        .typing-effect::after {
+            content: '|';
+            animation: blink 1s infinite;
+        }
+        @keyframes blink { 50% { opacity: 0; } }
+
+        /* Container */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 1.5rem 4rem;
+        }
+
+        /* Sections */
+        section { margin-bottom: 3rem; }
+        h2 { border-bottom: 2px solid var(--accent); display: inline-block; padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
+
+        /* Project Cards (Grid) */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 12px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            border-color: var(--accent);
+        }
+
+        .card h3 { margin-top: 0; color: var(--accent); }
+        .tech-stack { font-size: 0.85rem; color: var(--text-secondary); margin: 10px 0; }
+        .tech-tag { background: rgba(56,189,248,0.1); padding: 2px 8px; border-radius: 4px; color: var(--accent); font-size: 0.75rem; margin-right: 5px; }
+
+        .links { margin-top: 1rem; }
+        .links a {
+            text-decoration: none;
+            color: var(--text-primary);
+            font-size: 0.9rem;
+            margin-right: 15px;
+            border-bottom: 1px dotted var(--text-secondary);
+        }
+        .links a:hover { color: var(--accent); border-bottom-style: solid; }
+
+        /* Contact & Socials */
+        .social-links { text-align: center; margin-top: 2rem; }
+        .social-links a {
+            color: var(--text-secondary);
+            font-size: 1.5rem;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+        .social-links a:hover { color: var(--accent); }
+
+        /* Button */
+        .btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: var(--bg-color);
+            padding: 0.8rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+        .btn:hover { opacity: 0.9; }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Abdul Rahim Memon</h1>
+        <p class="subtitle typing-effect">Data Science Student | Co-op Seeker</p>
+        <div class="social-links">
+            <a href="mailto:YOUR_EMAIL"><i class="fas fa-envelope"></i></a>
+            <a href="LINKEDIN_URL"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/abdrahim-123"><i class="fab fa-github"></i></a>
+        </div>
+        <a href="/resume.pdf" class="btn"><i class="fas fa-download"></i> Download Resume</a>
+    </header>
+
+    <div class="container">
+        
+        <section>
+            <h2><i class="fas fa-user-astronaut"></i> About Me</h2>
+            <p>I am a Computer Science student at Dalhousie University focused on <strong>Data Science</strong> and <strong>Machine Learning</strong>. I build systems that reason, remember, and solve real-world problems.</p>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-code"></i> Skills</h2>
+            <div class="card">
+                <p><strong>Languages:</strong> Python, SQL, JavaScript, C++, Java</p>
+                <p><strong>Data Science:</strong> Pandas, NumPy, Scikit-learn, RAG Pipelines</p>
+                <p><strong>Tools:</strong> Git, Docker, n8n, Supabase, Linux</p>
+            </div>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-rocket"></i> Projects</h2>
+            <div class="project-grid">
+
+                <div class="card">
+                    <h3>Sentient AI Support Agent</h3>
+                    <p class="tech-stack">
+                        <span class="tech-tag">n8n</span>
+                        <span class="tech-tag">Llama 3</span>
+                        <span class="tech-tag">Supabase</span>
+                    </p>
+                    <p>An autonomous agent using Split-Brain Architecture to reduce support ticket volume. Features memory duplication detection and RAG policy checking.</p>
+                    <div class="links">
+                        <a href="YOUR_GITHUB_REPO_LINK"><i class="fab fa-github"></i> View Code</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Task Manager Pro</h3>
+                    <p class="tech-stack">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </p>
+                    <p>A production-ready productivity app with Glassmorphism UI. Features secure JWT authentication and complex CRUD operations.</p>
+                    <div class="links">
+                        <a href="https://task-manager-pro-git-main-abdul-rahims-projects-15b82580.vercel.app/"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="YOUR_GITHUB_REPO_LINK"><i class="fab fa-github"></i> View Code</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Packet Capture Logger</h3>
+                    <p class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Scapy</span>
+                        <span class="tech-tag">CLI</span>
+                    </p>
+                    <p>A network analysis tool for real-time traffic monitoring. Parses PCAP files and generates JSONL logs for debugging.</p>
+                    <div class="links">
+                        <a href="YOUR_GITHUB_REPO_LINK"><i class="fab fa-github"></i> View Code</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
