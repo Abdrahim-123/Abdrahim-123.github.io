@@ -26,11 +26,23 @@
         /* Header / Hero Section */
         header {
             text-align: center;
-            padding: 4rem 1rem;
+            padding: 4rem 1rem 3rem;
             background: linear-gradient(180deg, rgba(15,23,42,0) 0%, rgba(56,189,248,0.1) 100%);
         }
 
-        h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        /* --- CSS FOR THE IMAGE --- */
+        .profile-image {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover; /* This ensures your JPG looks good even if it's not a perfect square */
+            border: 4px solid var(--accent);
+            box-shadow: 0 0 25px rgba(56, 189, 248, 0.3);
+            margin-bottom: 1.5rem;
+        }
+        /* --------------------------- */
+
+        h1 { font-size: 2.5rem; margin-bottom: 0.5rem; margin-top: 0; }
         .subtitle { color: var(--accent); font-weight: bold; font-size: 1.2rem; }
         
         /* Typing Animation */
@@ -117,6 +129,8 @@
 <body>
 
     <header>
+        <img src="image.jpg" alt="Abdul Rahim Memon Headshot" class="profile-image">
+        
         <h1>Abdul Rahim Memon</h1>
         <p class="subtitle typing-effect">Data Science Student | Co-op Seeker</p>
         <div class="social-links">
