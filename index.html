@@ -35,12 +35,11 @@
             width: 160px;
             height: 160px;
             border-radius: 50%;
-            object-fit: cover; /* This ensures your JPG looks good even if it's not a perfect square */
+            object-fit: cover;
             border: 4px solid var(--accent);
             box-shadow: 0 0 25px rgba(56, 189, 248, 0.3);
             margin-bottom: 1.5rem;
         }
-        /* --------------------------- */
 
         h1 { font-size: 2.5rem; margin-bottom: 0.5rem; margin-top: 0; }
         .subtitle { color: var(--accent); font-weight: bold; font-size: 1.2rem; }
@@ -90,6 +89,19 @@
         .card h3 { margin-top: 0; color: var(--accent); }
         .tech-stack { font-size: 0.85rem; color: var(--text-secondary); margin: 10px 0; }
         .tech-tag { background: rgba(56,189,248,0.1); padding: 2px 8px; border-radius: 4px; color: var(--accent); font-size: 0.75rem; margin-right: 5px; }
+
+        /* New Style for Demo Context Note */
+        .demo-note {
+            margin-top: 1rem;
+            font-size: 0.85rem;
+            color: #cbd5e1;
+            background: rgba(255,255,255,0.03);
+            padding: 12px;
+            border-radius: 8px;
+            border-left: 3px solid var(--accent);
+        }
+        .demo-note strong { color: var(--accent); display: block; margin-bottom: 5px; }
+        .demo-note ul { margin: 0; padding-left: 20px; list-style-type: square; }
 
         .links { margin-top: 1rem; }
         .links a {
@@ -168,11 +180,22 @@
                             <span class="tech-tag">n8n</span>
                             <span class="tech-tag">Llama 3</span>
                             <span class="tech-tag">Supabase</span>
+                            <span class="tech-tag">Streamlit</span>
                         </p>
                         <p>An autonomous agent using Split-Brain Architecture to reduce support ticket volume. Features memory duplication detection and RAG policy checking.</p>
+                        
+                        <div class="demo-note">
+                            <strong><i class="fas fa-info-circle"></i> Live Demo Architecture:</strong>
+                            <ul>
+                                <li>Replaces <strong>Email/IMAP</strong> with an <strong>HTTP Webhook</strong> for real-time browser interaction.</li>
+                                <li><strong>Discord Node</strong> is disabled in this public build for privacy.</li>
+                            </ul>
+                        </div>
                     </div>
+                    
                     <div class="links">
-                        <a href="https://github.com/Abdrahim-123/My-n8n-projects"><i class="fab fa-github"></i> View Code</a>
+                        <a href="https://huggingface.co/spaces/Prosspec/sentient-support-demo" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="https://github.com/Abdrahim-123/My-n8n-projects" target="_blank"><i class="fab fa-github"></i> View Code</a>
                     </div>
                 </div>
 
